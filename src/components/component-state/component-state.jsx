@@ -1,17 +1,23 @@
 import { useLayoutEffect, useState } from "react";
 
 export function StateVariables() {
-  const [name, setName] = useState("Koushik");
+  const [price, setPrice] = useState(0);
+  const [name, setName] = useState("");
 
   useLayoutEffect(() => {
-    setName("David"); // runs before browser paints
+    setPrice(56000)
+    setName("Samsung TV"); // runs before browser paints
   }, []);
 
   return (
     <div className="container-fluid">
       <h2 className="text-center text-warning p-3">Data Binding</h2>
-      <p>Hello, {name}!</p>
-      <input type="text" value={name} readOnly />
+      <dl>
+        <dt>Product Name</dt>
+        <dd>{name}</dd>
+        <dt>Price</dt>
+        <dd>{price}</dd>
+      </dl>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 
-import { StateVariables } from './components/component-state/component-state'
-import { DataBinding } from './components/data-binding/data-binding'
+import { NumberBinding } from './components/binding-data-types/number-bindings'
+
 
 
 function App() {
 
   return (
     <div>
-      <StateVariables/>
+      <NumberBinding/>
     </div>  
   )
 }
