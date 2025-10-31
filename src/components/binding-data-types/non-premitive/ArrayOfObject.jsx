@@ -46,7 +46,7 @@ function ArrayOfObjectBinding(){
                 </thead>
                 <tbody>
                     {
-                        products.map((prod,index)=><tr key={index}><td>{prod.Name}</td><td>{prod.Price}</td><td>{prod.ShippedTo}</td><td>{prod.Rating.Rate}<span className="text-success bi bi-star-fill">{prod.Rating.Count}</span></td><td><button className="btn btn-success bi bi-eye"></button> <button className="btn btn-warning bi bi-pen-fill ms-2"></button> <button className="btn btn-danger bi bi-trash mx-2"></button></td></tr>)
+                        products.map((prod,index)=><tr key={index}><td>{prod.Name}</td><td>{prod.Price}</td><td>{prod.ShippedTo}</td><td>{prod.Rating.Rate}<span className="text-success bi bi-star-fill"> [{prod.Rating.Count}]</span></td><td><button className="btn btn-success bi bi-eye"></button> <button className="btn btn-warning bi bi-pen-fill ms-2"></button> <button className="btn btn-danger bi bi-trash mx-2"></button></td></tr>)
                     }
                 </tbody>
             </table>

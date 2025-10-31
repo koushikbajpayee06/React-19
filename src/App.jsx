@@ -1,6 +1,7 @@
 
 import ArrayBinding from './components/binding-data-types/non-premitive/Array'
 import ArrayOfObjectBinding from './components/binding-data-types/non-premitive/ArrayOfObject'
+import NestedDataBinding from './components/binding-data-types/non-premitive/Nested'
 import ObjectBinding from './components/binding-data-types/non-premitive/object'
 import { BooleanBinding } from './components/binding-data-types/premitive/boolean-binding'
 import { NullBinding } from './components/binding-data-types/premitive/null-binding'
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <ArrayOfObjectBinding/>
+      <NestedDataBinding/>
     </div>  
   )
 }
