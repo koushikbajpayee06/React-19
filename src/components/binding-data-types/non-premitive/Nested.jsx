@@ -30,6 +30,16 @@ function NestedDataBinding()
                     </li>)
                 }
             </ol>
+            <select>
+                {
+                    data.map(item=>
+                    <optgroup key={item} label={item.Catagory}>
+                        {
+                            item.Products.map(product=><option key={product}>{product}</option>)
+                        }
+                    </optgroup>)
+                }
+            </select>
         </div>
     )
 }
