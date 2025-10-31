@@ -22,7 +22,7 @@ function ObjectBinding(){
                 <dd>
                     <ul>
                         {
-                             product.ShippedTo.map((addr)=><li ley={addr}>{addr}</li>)
+                            product.ShippedTo.map((addr)=><li ley={addr}>{addr}</li>)
                         }
                         </ul>
                 </dd>
