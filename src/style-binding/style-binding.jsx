@@ -6,6 +6,12 @@ import { useState, useEffect } from "react";
 function StyleBind(){
     const [prod, setProd] = useState({title:"",price:0,image:'',rating:{rate:0,ratings:0,reviews:0},offers:[]})
     const [textStyle, setTextStyle] = useState('');
+    const [styleObj, setStyleObj] = useState({
+        textAlign:"center",
+        color:"red",
+        border:"2px solid black",
+        padding:"20px"
+    })
 
    function GetProduct(){
        axios.get('product.json').then(response=>{
@@ -19,7 +25,7 @@ function StyleBind(){
     },[])
     return(
         <div className="container-fluid">
-            <h1 style={{textAlign:"center", color:"red"}}>Axious Demo</h1>
+            <h1 style={styleObj}>Axious Demo</h1>
             <div className="row mt-5">
                 <div className="col-3">
                      <img src={prod.image} width="100%"/>
