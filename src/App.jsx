@@ -11,6 +11,7 @@ import { NullBinding } from './components/binding-data-types/premitive/null-bind
 import { NumberBinding } from './components/binding-data-types/premitive/number-bindings'
 import { UndefinedBinding } from './components/binding-data-types/premitive/undefined-binding'
 import AxiousFetch from './components/React-3rdParty-Services/axios'
+import StyleBind from './style-binding/style-binding'
 
 
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div>
-      <ClassBind/>
+      <StyleBind/>
     </div>  
   )
 }
