@@ -1,4 +1,5 @@
 
+import ClassBind from './class-binding/class-binding'
 import Fetch from './components/AJAX-Techniques/fetch'
 import XmlFetch from './components/AJAX-Techniques/xmlHttp'
 import ArrayBinding from './components/binding-data-types/non-premitive/Array'
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <AxiousFetch/>
+      <ClassBind/>
     </div>  
   )
 }
