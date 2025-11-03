@@ -1,23 +1,19 @@
-import { useState, useEffect } from "react";
 
-function XmlFetch(){
+import axios from "axios";
+import { useState, useEffect } from "react";
+axios
+
+function AxiousFetch(){
     const [prod, setProd] = useState({title:"",price:0,image:'',rating:{rate:0,ratings:0,reviews:0},offers:[]})
 
-    function GetProduct(){
-        var http = new XMLHttpRequest();
-        http.open("get","product.json",true);
-        http.send();
-        http.onreadystatechange = function(){
-          if(http.readyState===4){
-                setProd(JSON.parse(http.responseText));
-            }
-                
-        }
-    }
+   function GetProduct(){
+       axios.get('product.json').then(response=>{
+        setProd(response.data);
+       })
+   }
     useEffect(()=>{
         GetProduct();
-    },[]);
-
+    },[])
     return(
         <div className="container-fluid">
             <div className="row mt-5">
@@ -46,4 +42,4 @@ function XmlFetch(){
     )
 }
 
-export default XmlFetch;
+export default AxiousFetch;

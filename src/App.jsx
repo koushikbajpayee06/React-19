@@ -9,6 +9,7 @@ import { BooleanBinding } from './components/binding-data-types/premitive/boolea
 import { NullBinding } from './components/binding-data-types/premitive/null-binding'
 import { NumberBinding } from './components/binding-data-types/premitive/number-bindings'
 import { UndefinedBinding } from './components/binding-data-types/premitive/undefined-binding'
+import AxiousFetch from './components/React-3rdParty-Services/axios'
 
 
 
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <Fetch/>
+      <AxiousFetch/>
     </div>  
   )
 }
