@@ -1,4 +1,5 @@
 
+import XmlFetch from './components/AJAX-Techniques/xmlHttp'
 import ArrayBinding from './components/binding-data-types/non-premitive/Array'
 import ArrayOfObjectBinding from './components/binding-data-types/non-premitive/ArrayOfObject'
 import NestedDataBinding from './components/binding-data-types/non-premitive/Nested'
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <NestedDataBinding/>
+      <XmlFetch/>
     </div>  
   )
 }
