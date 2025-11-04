@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 function StyleBind(){
     const [prod, setProd] = useState({title:"",price:0,image:'',rating:{rate:0,ratings:0,reviews:0},offers:[]})
     const [textStyle, setTextStyle] = useState('');
-    const [styleObj, setStyleObj] = useState({
+    const [styleObj] = useState({
         textAlign:"center",
         color:"red",
         border:"2px solid black",
@@ -46,8 +46,7 @@ function StyleBind(){
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div>          
         </div>
     )
 }

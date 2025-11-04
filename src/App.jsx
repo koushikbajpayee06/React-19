@@ -10,8 +10,11 @@ import { BooleanBinding } from './components/binding-data-types/premitive/boolea
 import { NullBinding } from './components/binding-data-types/premitive/null-binding'
 import { NumberBinding } from './components/binding-data-types/premitive/number-bindings'
 import { UndefinedBinding } from './components/binding-data-types/premitive/undefined-binding'
+import { EventBinding } from './components/event-binding/event-binding'
+
 import AxiousFetch from './components/React-3rdParty-Services/axios'
-import StyleBind from './style-binding/style-binding'
+import StyleBind from './components/style-binding/style-binding'
+
 
 
 
@@ -21,7 +24,7 @@ function App() {
 
   return (
     <div>
-      <StyleBind/>
+        <EventBinding/>
     </div>  
   )
 }

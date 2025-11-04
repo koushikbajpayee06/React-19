@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ClickMe(){
+            console.log("Start Request");
+
+            setTimeout(function(){
+                console.log("This is async task")
+            },0);
+
+            Promise.resolve().then(function(){
+                console.log("Micro Task");
+            });
+            
+            console.log("End Request");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ClickMe()">Click</button>
+</body>
+</html>
