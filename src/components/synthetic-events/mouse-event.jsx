@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
-import './mouse-demo.css' 
+import './mouse-event.css' 
 
 
 export function MouseDemo(){
