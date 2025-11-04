@@ -18,6 +18,7 @@ import StyleBind from './components/style-binding/style-binding'
 import { EventCustomArgument } from './components/event-binding/event-custom-arguments'
 import { EventBothArgument } from './components/event-binding/event-both-argument.'
 import { EventPropagation } from './components/event-binding/event-propagation'
+import { TwoWayBinding } from './components/two-way-binding/two-way'
 
 
 
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div>
-       <EventPropagation/>
+       <TwoWayBinding/>
     </div>  
   )
 }
