@@ -6,7 +6,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 import App from './App.jsx'
+import { MouseDemo } from './components/synthetic-events/mouse-event.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <App />
+    <MouseDemo/>
 )
