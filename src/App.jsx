@@ -10,11 +10,12 @@ import { BooleanBinding } from './components/binding-data-types/premitive/boolea
 import { NullBinding } from './components/binding-data-types/premitive/null-binding'
 import { NumberBinding } from './components/binding-data-types/premitive/number-bindings'
 import { UndefinedBinding } from './components/binding-data-types/premitive/undefined-binding'
-import { EventArgument } from './components/event-binding/event-argument'
+import { EventArgument } from './components/event-binding/event-default-argument'
 import { EventBinding } from './components/event-binding/event-binding'
 
 import AxiousFetch from './components/React-3rdParty-Services/axios'
 import StyleBind from './components/style-binding/style-binding'
+import { EventCustomArgument } from './components/event-binding/event-custom-arguments'
 
 
 
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div>
-       <EventArgument/>
+       <EventCustomArgument/>
     </div>  
   )
 }
