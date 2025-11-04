@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export function MouseMove(){
     const [imgPos, setImgPos] = useState({position:null, top:null,left:null});
 
