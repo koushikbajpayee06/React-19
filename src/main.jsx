@@ -8,7 +8,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import App from './App.jsx'
 import { MouseDemo } from './components/synthetic-events/mouse-event.jsx';
 import { MouseAnimation } from './components/synthetic-events/mouse-animation.jsx';
+import { MouseMove } from './components/synthetic-events/mouse-move.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <MouseAnimation/>
+    <MouseMove/>
 )
