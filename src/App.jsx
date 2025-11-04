@@ -16,6 +16,7 @@ import { EventBinding } from './components/event-binding/event-binding'
 import AxiousFetch from './components/React-3rdParty-Services/axios'
 import StyleBind from './components/style-binding/style-binding'
 import { EventCustomArgument } from './components/event-binding/event-custom-arguments'
+import { EventBothArgument } from './components/event-binding/event-both-argument.'
 
 
 
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div>
-       <EventCustomArgument/>
+       <EventBothArgument/>
     </div>  
   )
 }
