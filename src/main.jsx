@@ -11,7 +11,8 @@ import { MouseAnimation } from './components/synthetic-events/mouse-animation.js
 import { MouseMove } from './components/synthetic-events/mouse-move.jsx';
 import { KeyDemo } from './components/synthetic-events/key-domo.jsx';
 import { EMICalculator } from './components/emi-calculator/emi-calculator.jsx';
+import { ButtonDemo } from './components/btn-demo/btn-demo.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <EMICalculator />
+    <ButtonDemo/>
 )
