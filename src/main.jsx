@@ -10,7 +10,8 @@ import { MouseDemo } from './components/synthetic-events/mouse-event.jsx';
 import { MouseAnimation } from './components/synthetic-events/mouse-animation.jsx';
 import { MouseMove } from './components/synthetic-events/mouse-move.jsx';
 import { KeyDemo } from './components/synthetic-events/key-domo.jsx';
+import { EMICalculator } from './components/emi-calculator/emi-calculator.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <KeyDemo/>
+    <EMICalculator />
 )
