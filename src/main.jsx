@@ -13,7 +13,8 @@ import { KeyDemo } from './components/synthetic-events/key-domo.jsx';
 import { EMICalculator } from './components/emi-calculator/emi-calculator.jsx';
 import { ButtonDemo } from './components/btn-demo/btn-demo.jsx';
 import { Debounce } from './components/timeout-events/debounce-demo.jsx';
+import { ThrottleDemo } from './components/timeout-events/throttle-demo.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <Debounce/>
+    <ThrottleDemo/>
 )
