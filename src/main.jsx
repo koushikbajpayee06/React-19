@@ -15,7 +15,8 @@ import { ButtonDemo } from './components/btn-demo/btn-demo.jsx';
 import { Debounce } from './components/timeout-events/debounce-demo.jsx';
 import { ThrottleDemo } from './components/timeout-events/throttle-demo.jsx';
 import { Stopwatch } from './components/stop-watch/stopwatch.jsx';
+import { CarouselDemo } from './components/carousel/carousel-domo.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <Stopwatch />
+    <CarouselDemo/>
 )
