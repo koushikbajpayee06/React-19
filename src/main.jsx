@@ -17,7 +17,8 @@ import { ThrottleDemo } from './components/timeout-events/throttle-demo.jsx';
 import { Stopwatch } from './components/stop-watch/stopwatch.jsx';
 import { CarouselDemo } from './components/carousel/carousel-domo.jsx';
 import FormDemo from './components/react-forms/FormDemo.jsx';
+import FormikDemo from './components/react-forms/FormikDemo.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <FormDemo/>
+    <FormikDemo/>
 )
