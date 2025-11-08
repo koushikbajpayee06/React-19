@@ -18,7 +18,8 @@ import { Stopwatch } from './components/stop-watch/stopwatch.jsx';
 import { CarouselDemo } from './components/carousel/carousel-domo.jsx';
 import FormDemo from './components/react-forms/FormDemo.jsx';
 import FormikDemo from './components/react-forms/FormikDemo.jsx';
+import FormikFormValidations from './components/react-forms/FormikFormValidations.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <FormikDemo/>
+    <FormikFormValidations/>
 )
