@@ -15,15 +15,26 @@ import { useEffect, useRef, useState } from "react";
             rating:{rate:0,count:0}
         }
     ); 
+    const [status, setStatus] = useState(null);
     
     let productId = useRef(1);
+    let thread = useRef(null);
 
     function LoadProductManually(id){
         axios.get(`https://fakestoreapi.com/products/${id}`)
         .then(response=>{
             setProduct(response.data);
         });
-        
+        setStatus("Slide Show - Manual")  
+    }
+    function LoadProductAuto(){
+       productId.current = productId.current+1;
+        axios.get(`https://fakestoreapi.com/products/${productId.current}`)
+        .then(response=>{
+            setProduct(response.data);
+        });
+
+        setStatus("Slide Show - Auto")  
     }
     
     function handleNextClick(){
@@ -40,6 +51,14 @@ import { useEffect, useRef, useState } from "react";
         LoadProductManually(productId.current)
     }
 
+    function handlePlayClick(){
+        thread.current= setInterval(LoadProductAuto,5000);
+    }
+    function handlePauseClick(){
+        clearInterval(thread.current);
+        setStatus("Slide Show - Paused")
+    }
+
     useEffect(()=>{
         LoadProductManually(1);
         // console.log(product);
@@ -50,6 +69,7 @@ import { useEffect, useRef, useState } from "react";
             <div className="card p-2 w-50 mt-4">
                 <div className="card-header">
                     <div>{product.title}</div>
+                    <div className="fw-bold">{status}</div>
                 </div>
                 <div className="card-body">
                     <div className="row">
@@ -68,8 +88,8 @@ import { useEffect, useRef, useState } from "react";
                     </div>
                 </div>
                 <div className="card-header text-center">
-                    <button className="btn btn-success bi bi-play " ></button>
-                    <button className="btn btn-danger bi bi-pause mx-2"></button>
+                    <button className="btn btn-success bi bi-play " onClick={handlePlayClick} ></button>
+                    <button className="btn btn-danger bi bi-pause mx-2" onClick={handlePauseClick}></button>
                 </div>
             </div>
         </div>
