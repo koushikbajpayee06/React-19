@@ -13,7 +13,7 @@ export function FormNew() {
 
   return (
     <div className="container-fluid">
-        <header className="mt-3">
+        <header className="mt-2">
             <NavBar theme='bg-warning' brandTitle="Shopper." navItems={["Home","Shop","Pages","Blog","Docs"]}/>
         </header>
         <section>
