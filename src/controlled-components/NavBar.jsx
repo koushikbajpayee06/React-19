@@ -3,7 +3,7 @@ import React from 'react'
 
 const NavBar = (props) => {
   return (
-    <nav className='d-flex align-items-center justify-content-between p-3 border border-1 border-secondary'>
+    <nav className={`d-flex ${props.theme} my-3 align-items-center justify-content-between p-3 border border-1 border-secondary`}>
       <div><span className='fs-4 fw-bold'>{props.brandTitle}</span></div>
       <div>
         {
