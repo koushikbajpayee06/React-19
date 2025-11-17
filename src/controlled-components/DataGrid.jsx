@@ -12,17 +12,17 @@ const DataGrid = (props) => {
                     <div className='dropdown d-inline'>
                         <button data-bs-toggle="dropdown" className='bi bi-three-dots-vertical btn'></button>
                         <ul className='dropdown-menu'>
-                            <li className='dropdown-menu-item'>
+                            <li className='dropdown-item'>
                                 <span className='dropdown-item-text'>
                                     <span className='bi bi-sort-alpha-down'></span>Sort Ascending
                                 </span>
                             </li>
-                            <li className='dropdown-menu-item'>
+                            <li className='dropdown-item'>
                                 <span className='dropdown-item-text'>
                                     <span className='bi bi-sort-alpha-up'></span>Sort Descending
                                 </span>
                             </li>
-                            <li className='dropdown-menu-item'>
+                            <li className='dropdown-item'>
                                 <span className='dropdown-item-text'>
                                     <span className='bi bi-flask'></span>Filter
                                 </span>
