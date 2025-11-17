@@ -20,7 +20,8 @@ import FormDemo from './components/react-forms/FormDemo.jsx';
 import FormikDemo from './components/react-forms/FormikDemo.jsx';
 import FormikFormValidations from './components/react-forms/FormikFormValidations.jsx';
 import { FormNew } from './components/react-forms/FormNew.jsx';
+import ControlledDemo from './components/ControlledDemo/ControlledDemo.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <FormNew/>
+    <ControlledDemo/>
 )
