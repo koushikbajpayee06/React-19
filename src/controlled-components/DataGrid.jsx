@@ -7,7 +7,17 @@ const DataGrid = (props) => {
       <thead>
         <tr>
             {
-                props.fields.map((field)=><th key={field}>{field}</th>)
+                props.fields.map((field)=>
+                <th key={field}>{field}
+                    <div className='dropdown d-inline'>
+                        <button data-bs-toggle="dropdown" className='bi bi-three-dots-vertical btn'></button>
+                        <ul className='dropdown-menu'>
+                            <li className='dropdown-menu-item'>
+                                <span className='dropdown-item-text'><span className='bi bi-sort-alpha-down'>Sort Ascending</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </th>)
             }
             <th>Actions</th>
         </tr>
