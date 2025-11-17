@@ -2,7 +2,7 @@ import React from 'react'
 
 const DataGrid = (props) => {
   return (
-    <table className=''>
+    <table className='table table-hover table-border caption-top'>
       <caption>{props.caption}</caption>
       <thead>
         <tr>
