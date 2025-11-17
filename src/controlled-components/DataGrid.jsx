@@ -9,7 +9,9 @@ const DataGrid = (props) => {
             {
                 props.fields.map((field)=><th key={field}>{field}</th>)
             }
+            <th>Actions</th>
         </tr>
+        
       </thead>
       <tbody>
         {
@@ -18,6 +20,10 @@ const DataGrid = (props) => {
                 {
                     Object.keys(item).map(key=><td key={key}>{item[key]}</td>)
                 }
+            <td>
+                <button className='btn btn-warning bi bi-pen-fill'></button>
+                <button className='btn btn-danger bi bi-trash mx-2'></button>
+            </td>
             </tr>
             )
         }
