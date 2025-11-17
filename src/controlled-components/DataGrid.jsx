@@ -13,7 +13,9 @@ const DataGrid = (props) => {
                         <button data-bs-toggle="dropdown" className='bi bi-three-dots-vertical btn'></button>
                         <ul className='dropdown-menu'>
                             <li className='dropdown-menu-item'>
-                                <span className='dropdown-item-text'><span className='bi bi-sort-alpha-down'></span>Sort Ascending</span>
+                                <span className='dropdown-item-text'>
+                                    <span className='bi bi-sort-alpha-down'></span>Sort Ascending
+                                </span>
                             </li>
                         </ul>
                     </div>
