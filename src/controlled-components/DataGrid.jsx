@@ -17,6 +17,16 @@ const DataGrid = (props) => {
                                     <span className='bi bi-sort-alpha-down'></span>Sort Ascending
                                 </span>
                             </li>
+                            <li className='dropdown-menu-item'>
+                                <span className='dropdown-item-text'>
+                                    <span className='bi bi-sort-alpha-up'></span>Sort Descending
+                                </span>
+                            </li>
+                            <li className='dropdown-menu-item'>
+                                <span className='dropdown-item-text'>
+                                    <span className='bi bi-flask'></span>Filter
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </th>)
