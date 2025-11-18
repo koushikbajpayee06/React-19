@@ -25,7 +25,8 @@ import ControlledDemo from './components/ControlledDemo/ControlledDemo.jsx';
 import ConditionDemo from './components/condition-demo.jsx/ConditionDemo.jsx';
 import ConditionDemo2 from './components/condition-demo.jsx/ConditionDemo2.jsx';
 import Login from './components/Login.jsx';
+import { LifeCycleDemo } from './components/lifecycledemo/LifeCycle.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <Login/>
+    <LifeCycleDemo/>
 )
