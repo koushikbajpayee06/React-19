@@ -23,7 +23,8 @@ import FormikFormValidations from './components/react-forms/FormikFormValidation
 import { FormNew } from './components/react-forms/FormNew.jsx';
 import ControlledDemo from './components/ControlledDemo/ControlledDemo.jsx';
 import ConditionDemo from './components/condition-demo.jsx/ConditionDemo.jsx';
+import ConditionDemo2 from './components/condition-demo.jsx/ConditionDemo2.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <ControlledDemo/>
+    <ConditionDemo2/>
 )
