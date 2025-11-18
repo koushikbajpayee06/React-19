@@ -25,5 +25,5 @@ import ControlledDemo from './components/ControlledDemo/ControlledDemo.jsx';
 import ConditionDemo from './components/condition-demo.jsx/ConditionDemo.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <ConditionDemo/>
+    <ControlledDemo/>
 )
