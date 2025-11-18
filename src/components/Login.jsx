@@ -1,9 +1,13 @@
 import React from 'react'
 import useCapcha from '../hooks/useCapcha'
+import {useFetch} from '../hooks/useFetch'
+
 import './login.css'
 
 const Login = () => {
     const code = useCapcha();
+    const categories = useFetch('https://fakestoreapi.com/products/categories')
+
     
     return (
         <div className="d-flex justify-content-center">
@@ -21,6 +25,11 @@ const Login = () => {
                 </dl>
 
                 <button className="btn btn-primary login-btn">Login</button>
+                <ul>
+                    {
+                        categories.map(catagory=><li key={catagory}>{catagory}</li>)
+                    }
+                </ul>
             </form>
         </div>
     );
