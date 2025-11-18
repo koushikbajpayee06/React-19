@@ -4,6 +4,12 @@ const ConditionDemo2 = () => {
 
     const [userName,setUserName] = useState(null);
 
+    function SessionTimeout(){
+        alert("Your session Timed OUT")
+        window.sessionStorage.removeItem("uname");
+        location.reload();
+    }
+
     function handleNameChange(e){
         setUserName(e.target.value);
     }
@@ -11,6 +17,7 @@ const ConditionDemo2 = () => {
     function handleSigninClick(){
         window.sessionStorage.setItem("uname",userName);
         location.reload();
+
     }
 
     function handleSignOutClick(){
@@ -19,7 +26,7 @@ const ConditionDemo2 = () => {
     }
 
     useEffect(()=>{
-
+                setTimeout(SessionTimeout,5000)
     },[])
 
   return (
