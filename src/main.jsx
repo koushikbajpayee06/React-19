@@ -24,7 +24,8 @@ import { FormNew } from './components/react-forms/FormNew.jsx';
 import ControlledDemo from './components/ControlledDemo/ControlledDemo.jsx';
 import ConditionDemo from './components/condition-demo.jsx/ConditionDemo.jsx';
 import ConditionDemo2 from './components/condition-demo.jsx/ConditionDemo2.jsx';
+import Login from './components/Login.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <ConditionDemo2/>
+    <Login/>
 )

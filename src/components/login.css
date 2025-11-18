@@ -1,0 +1,43 @@
+.login-form {
+    width: 350px;
+    padding: 25px;
+    margin-top: 60px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.login-form h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form dl dt {
+    font-weight: 600;
+    margin-top: 12px;
+    color: #444;
+}
+
+.login-form dl dd {
+    margin-bottom: 12px;
+}
+
+.captcha-box {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 10px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: inline-block;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 15px;
+}
