@@ -71,6 +71,10 @@ const DataGridCondition = (props) => {
                                         item[Object.keys(item)[0]]
                                     }
                                 </div>
+                                <div className="card-footer">
+                                    <button className="btn btn-warning bi bi-pen-fill"></button>
+                                    <button className="btn mx-2 btn-danger bi bi-trash-fill"></button>
+                                </div>
                             </div>
                         )
                     }
