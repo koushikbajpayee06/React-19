@@ -12,11 +12,17 @@ export function Child2(){
     )
 }
 
-export function Child1(){
+export function Child1({onChildClick}){
     let context = useContext(userContext);
+
+    function handleButtonClick(){
+        var data = "Hello! from child";
+        onChildClick(data)
+    }
     return(
         <div className=" m-4 bg-warning text-danger p-4">
             <h2>Child-1 -  {context}</h2>
+            <button onClick={handleButtonClick} className="btn btn-light">Send Data to Parent</button>
             <Child2/>
         </div>
     )
@@ -24,17 +30,21 @@ export function Child1(){
 
 export function ContextDemo(){
     const [msg , setMsg] = useState("Welcome")
+    const [msgFromChild,setMsgFromChild] = useState(null)
     function handleNameChange(e){
         setMsg(e.target.value)
+    }
+    function handleChildClick(e){
+        setMsgFromChild(e)
     }
     return (
         <div className="container-fluid mx-4 bg-dark text-white p-4">
             <div>
                 <input type="text" placeholder="User Name" onChange={handleNameChange} />
             </div>
-            <h2>Parent  - {msg}</h2>
-            <userContext.Provider value={msg}>
-                <Child1/>
+            <h2>Parent  - {msg}<span className="mx-3">{msgFromChild}</span></h2>
+            <userContext.Provider value={msg} >
+                <Child1 onChildClick={handleChildClick}/>
             </userContext.Provider>
         </div>
     );
