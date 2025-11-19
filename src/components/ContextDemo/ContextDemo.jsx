@@ -16,7 +16,7 @@ export function Child1({onChildClick}){
     let context = useContext(userContext);
 
     function handleButtonClick(){
-        var data = "Hello! from child";
+        var data = {Name:"TV", Rating:4.2};
         onChildClick(data)
     }
     return(
@@ -42,7 +42,7 @@ export function ContextDemo(){
             <div>
                 <input type="text" placeholder="User Name" onChange={handleNameChange} />
             </div>
-            <h2>Parent  - {msg}<span className="mx-3">{msgFromChild}</span></h2>
+            <h2>Parent  - {msg}<span className="mx-3">{msgFromChild.Rating}</span></h2>
             <userContext.Provider value={msg} >
                 <Child1 onChildClick={handleChildClick}/>
             </userContext.Provider>
