@@ -11,6 +11,7 @@ export function Child2(){
         </div>
     )
 }
+
 export function Child1(){
     let context = useContext(userContext);
     return(
@@ -23,8 +24,14 @@ export function Child1(){
 
 export function ContextDemo(){
     const [msg , setMsg] = useState("Welcome")
+    function handleNameChange(e){
+        setMsg(e.target.value)
+    }
     return (
         <div className="container-fluid mx-4 bg-dark text-white p-4">
+            <div>
+                <input type="text" placeholder="User Name" onChange={handleNameChange} />
+            </div>
             <h2>Parent  - {msg}</h2>
             <userContext.Provider value={msg}>
                 <Child1/>
