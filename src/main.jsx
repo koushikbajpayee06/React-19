@@ -27,7 +27,9 @@ import ConditionDemo2 from './components/condition-demo.jsx/ConditionDemo2.jsx';
 import Login from './components/Login.jsx';
 import { LifeCycleDemo } from './components/lifecycledemo/LifeCycle.jsx';
 import { ContextDemo } from './components/ContextDemo/ContextDemo.jsx';
+import { FakeStoreIndex } from './Fakestore/FakeStoreIndex.jsx';
+import { FakeStoreProducts } from './Fakestore/FakeStoreProducts.jsx';
 
 createRoot(document.getElementById('root')).render(
-   <ContextDemo/>
+   <FakeStoreIndex/>
 )
